@@ -1,2 +1,2 @@
-# TurisTIC-App
+# TravelTic
 Repositorio oficial de TurisTIC-APP
