@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">TravelTic</string>
+    <string name="Title">Sitio1</string>
+    <string name="Detalles">Detalles</string>
 </resources>

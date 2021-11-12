@@ -44,7 +44,7 @@ class CustomAdapter: RecyclerView.Adapter<CustomAdapter.ViewHolder>(){
         init{
             itemImage = itemView.findViewById(R.id.item_image)
             itemTitle = itemView.findViewById(R.id.item_title)
-            itemDetail= itemView.findViewById(R.id.item_detal)
+            itemDetail= itemView.findViewById(R.id.item_detail)
         }
     }
 }
