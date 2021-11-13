@@ -38,16 +38,16 @@
 
 
         <TextView
+            android:id="@+id/item_detail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="@string/Detalles"
-            android:textColor="@color/white"
-            android:id="@+id/item_detail"
-            android:textStyle="bold"
+            android:layout_below="@+id/item_title"
             android:layout_toEndOf="@+id/item_image"
             android:layout_toRightOf="@+id/item_image"
-            android:layout_below="@+id/item_title"
-            android:textSize="30sp"/>
+            android:hint="@string/Detalles"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold" />
 
     </RelativeLayout>
 </androidx.cardview.widget.CardView>

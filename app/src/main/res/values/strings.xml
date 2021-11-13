@@ -2,4 +2,20 @@
     <string name="app_name">TravelTic</string>
     <string name="Title">Sitio1</string>
     <string name="Detalles">Detalles</string>
+    <string name="title_site">Bucaramanga</string>
+    <string name="Description_Bmanga">
+        Descripcion:
+        Bucaramanga es la capital del
+        departamento de Santander en
+        la zona norte de Colombia.
+        Está rodeada por la Cordillera
+        Oriental de los Andes y es conocida
+        por sus numerosos parques, incluido
+        el Parque del Agua, con cascadas
+        y fuentes, y el Parque García Rovira
+        bordeado de palmeras. En el centro de
+        la ciudad está la altísima Catedral de
+        la Sagrada Familia y la Capilla de los Dolores,
+        una importante capilla encalada de siglos de antigüedad.
+    </string>
 </resources>
