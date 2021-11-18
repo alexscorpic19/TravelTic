@@ -1,0 +1,40 @@
+{
+   "sites":[
+      {
+         "image": 1,
+         "name":"Catedral de giron",
+         "description":"la catedral mas antigua en la zona",
+         "points":"Puntos: 3"
+      },
+      {
+         "image": 2,
+         "name":"Parque de los niños",
+         "description":"uno de los parque emblematicos de la ciudad",
+         "points":"Puntos: 2"
+      },
+      {
+         "image": 3,
+         "name":"Parque san pio",
+         "description":"Este parque con la escultura de botero se...",
+         "points":"Puntos: 4"
+      },
+      {
+         "image": 4,
+         "name":"Casa de Bolivar",
+         "description":"se encuentra ubicada en el centro de la ciudad...",
+         "points":"Puntos: 3"
+      },
+      {
+         "image": 5,
+         "name":"Cerro del Santisimo",
+         "description":"Ubicado en el municipo de floridablanca es un de los sitios mas ...",
+         "points":"Puntos: 5"
+      },
+      {
+         "image": 5,
+         "name":"Parque Nacional Chicamocha Panachi",
+         "description":"Ubicado junto al cañol de chicamocha...",
+         "points":"Puntos: 5"
+      }
+   ]
+}
