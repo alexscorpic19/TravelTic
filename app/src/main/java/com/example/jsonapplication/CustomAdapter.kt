@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
+import com.bumptech.glide.Glide
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
 import kotlin.collections.ArrayList
@@ -24,8 +25,6 @@ class CustomAdapter(
         return MyViewHolder(v)
     }
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
-
-        holder.image.setImageResource(siteImage[position])
         holder.name.text = siteNames[position]
         holder.description.text = siteDescription[position]
         holder.points.text = sitePoints[position]
@@ -37,10 +36,20 @@ class CustomAdapter(
     override fun getItemCount(): Int {
         return siteNames.size
     }
+
     inner class MyViewHolder(itemView: View) : ViewHolder(itemView) {
         var image: ImageView = itemView.findViewById<View>(R.id.itemImage) as ImageView
         var name: TextView = itemView.findViewById<View>(R.id.tvName) as TextView
         var description: TextView = itemView.findViewById<View>(R.id.tvDescription) as TextView
         var points: TextView = itemView.findViewById<View>(R.id.tvPoints) as TextView
+
+        fun bind(){
+            Glide.with(context)
+                .load(siteImage)
+                .into(image)
+        }
     }
+
+
+
 }

@@ -10,7 +10,7 @@ import java.io.IOException
 import java.nio.charset.Charset
 class MainActivity : AppCompatActivity() {
 
-    //private var siteImage:ArrayList<Int> = ArrayList()
+    private var siteImage:ArrayList<String> = ArrayList()
     private var siteNames: ArrayList<String> = ArrayList()
     private var siteDescription: ArrayList<String> = ArrayList()
     private var sitePoints: ArrayList<String> = ArrayList()
@@ -18,16 +18,19 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
         title = "TravelTic-Bucaramanga"
         val recyclerView = findViewById<RecyclerView>(R.id.recyclerView)
         val linearLayoutManager = LinearLayoutManager(applicationContext)
         recyclerView.layoutManager = linearLayoutManager
         try {
+
             val obj = JSONObject(loadJSONFromAsset())
             val siteArray = obj.getJSONArray("sites")
             for (i in 0 until siteArray.length()) {
                 val siteDetail = siteArray.getJSONObject(i)
 
+                siteImage.add(siteDetail.getString("image"))
                 siteNames.add(siteDetail.getString("name"))
                 siteDescription.add(siteDetail.getString("description"))
                 sitePoints.add(siteDetail.getString("points"))
@@ -37,7 +40,7 @@ class MainActivity : AppCompatActivity() {
         catch (e: JSONException) {
             e.printStackTrace()
         }
-        val customAdapter = CustomAdapter(this@MainActivity, siteNames,siteDescription,sitePoints)
+        val customAdapter = CustomAdapter(this@MainActivity, siteImage,siteNames,siteDescription,sitePoints)
         recyclerView.adapter = customAdapter
     }
     private fun loadJSONFromAsset(): String {

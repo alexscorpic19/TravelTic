@@ -1,7 +1,7 @@
 {
    "sites":[
       {
-         "image": "salento_1_background.xml",
+         "image": "https://travelgrafia.co/wp-content/uploads/2019/04/cuando-ir-a-salento.jpg",
          "name":"Catedral de giron",
          "description":"la catedral mas antigua en la zona",
          "points":"Puntos: 3"
