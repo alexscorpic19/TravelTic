@@ -9,10 +9,12 @@ import org.json.JSONObject
 import java.io.IOException
 import java.nio.charset.Charset
 class MainActivity : AppCompatActivity() {
+
     //private var siteImage:ArrayList<Int> = ArrayList()
     private var siteNames: ArrayList<String> = ArrayList()
     private var siteDescription: ArrayList<String> = ArrayList()
     private var sitePoints: ArrayList<String> = ArrayList()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -35,7 +37,7 @@ class MainActivity : AppCompatActivity() {
         catch (e: JSONException) {
             e.printStackTrace()
         }
-        val customAdapter = CustomAdapter(this@MainActivity, siteNames,siteDescription,sitePoints,)
+        val customAdapter = CustomAdapter(this@MainActivity, siteNames,siteDescription,sitePoints)
         recyclerView.adapter = customAdapter
     }
     private fun loadJSONFromAsset(): String {

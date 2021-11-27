@@ -9,12 +9,11 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
-import java.util.*
 import kotlin.collections.ArrayList
 
 class CustomAdapter(
     private var context: Context,
-    //private var siteImage:ArrayList<Int>,
+    private var siteImage: ArrayList<String>,
     private var siteNames: ArrayList<String>,
     private var siteDescription: ArrayList<String>,
     private var sitePoints: ArrayList<String>
@@ -25,8 +24,8 @@ class CustomAdapter(
         return MyViewHolder(v)
     }
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
-        // set the data in items
-       // holder.image.setImageResource(siteImage[position])
+
+        holder.image.setImageResource(siteImage[position])
         holder.name.text = siteNames[position]
         holder.description.text = siteDescription[position]
         holder.points.text = sitePoints[position]
@@ -39,7 +38,7 @@ class CustomAdapter(
         return siteNames.size
     }
     inner class MyViewHolder(itemView: View) : ViewHolder(itemView) {
-       // var image: ImageView = itemView.findViewById<View>(R.id.itemImage) as ImageView
+        var image: ImageView = itemView.findViewById<View>(R.id.itemImage) as ImageView
         var name: TextView = itemView.findViewById<View>(R.id.tvName) as TextView
         var description: TextView = itemView.findViewById<View>(R.id.tvDescription) as TextView
         var points: TextView = itemView.findViewById<View>(R.id.tvPoints) as TextView

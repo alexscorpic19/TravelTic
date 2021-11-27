@@ -1,7 +1,7 @@
 {
    "sites":[
       {
-         "image": 1,
+         "image": "salento_1_background.xml",
          "name":"Catedral de giron",
          "description":"la catedral mas antigua en la zona",
          "points":"Puntos: 3"
