@@ -28,7 +28,9 @@ class CustomAdapter(
         holder.name.text = siteNames[position]
         holder.description.text = siteDescription[position]
         holder.points.text = sitePoints[position]
-        // implement setOnClickListener event on item view.
+
+        holder.bind()
+
         holder.itemView.setOnClickListener { // display a toast with person name on item click
             Toast.makeText(context, siteNames[position], Toast.LENGTH_SHORT).show()
         }
