@@ -1,0 +1,35 @@
+[
+  {
+
+    "name":"Catedral de giron",
+    "description":"la catedral mas antigua en la zona",
+    "points":"Puntos: 3",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/14/Basilica_Menor_San_Juan_Bautista_de_Giron.jpg"
+  },
+  {
+
+    "name":"Parque san pio",
+    "description":"Este parque con la escultura de botero se...",
+    "points":"Puntos: 4",
+    "image": "https://media-cdn.tripadvisor.com/media/photo-s/0b/c5/6f/c9/la-gordita.jpg"
+  },
+  {
+
+    "name":"Casa de Bolivar",
+    "description":"se encuentra ubicada en el centro de la ciudad...",
+    "points":"Puntos: 3",
+    "image": "https://versionantigua.bucaramanga.gov.co/noticias/wp-content/uploads/2019/05/Casa-de-Bol%C3%ADvar-en-Bucaramanga.jpg"
+  },
+  {
+    "name":"Cerro del Santisimo",
+    "description":"Ubicado en el municipo de floridablanca es un de los sitios mas ...",
+    "points":"Puntos: 5",
+    "image": "https://www.santanderalextremo.com/wp-content/uploads/2020/12/cerro-min.jpg"
+  },
+  {
+    "name":"Parque Nacional Chicamocha Panachi",
+    "description":"Ubicado junto al cañon de chicamocha...",
+    "points":"Puntos: 5",
+    "image": "https://static.wixstatic.com/media/8bfd40_80a9db7090484c7590bc859423a36d45~mv2.jpg"
+  }
+]
