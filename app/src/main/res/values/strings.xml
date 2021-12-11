@@ -29,6 +29,9 @@
     <string name="edit_site">Editar sitio</string>
     <string name="action_sort_first">Sort by First Name</string>
     <string name="action_sort_last">Sort by Last Name</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="notifications">Autorizar notificaciones</string>
+    <string name="SoundNotifications">Activar sonidos de notificaciones</string>
+
+
+
 </resources>
